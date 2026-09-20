@@ -6,11 +6,7 @@
     isNormalUser = true;
     description = "junkiejamba";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
-    packages = with pkgs; [
-      thunderbird
-      git
-      discord
-    ];
+    shell = pkgs.zsh;
   };
 
   security.sudo.extraRules = [

@@ -1,7 +1,7 @@
-{ pkgs, inputs, ...}:
-
+{ pkgs, inputs, lib, ...}:
 {
-# Install hyprland
+
+ #Install hyprland
   programs.hyprland = {
     enable = true;
 };
@@ -13,6 +13,8 @@
   programs.kdeconnect = {
     enable = true;
 };
+  #Install Zsh
+  programs.zsh.enable = true;
   #Install Steam
   programs.steam = {
     enable = true;
@@ -27,12 +29,28 @@
   # You can use https://search.nixos.org/ to find more packages (and options).
    environment.systemPackages = with pkgs; [
      vim
+     pkgs.qbittorrent
+     pkgs.vlc
+     pkgs.proton-vpn
      fastfetch
      btop
+     git
      wget
      alacritty
      kitty
      tmux
      inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
    ];
+   fonts.packages = with pkgs; [
+     noto-fonts
+     noto-fonts-cjk-sans
+     noto-fonts-color-emoji
+     liberation_ttf
+     fira-code
+     fira-code-symbols
+     mplus-outline-fonts.githubRelease
+     dina-font
+     proggyfonts
+   ];
 }
+

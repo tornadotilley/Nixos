@@ -7,6 +7,8 @@
 
   home.packages = with pkgs; [
     eza
+    obsidian
+    foliate
     discord
   ];
   programs.vim = {

@@ -9,6 +9,7 @@
     fastfetch
     pfetch
     eza
+    ttyper
     obsidian
     foliate
     discord
@@ -77,7 +78,7 @@
 
     # Commands to execute at the end of interactive shell startup
     initContent = ''
-      pfetch
+      fastfetch
     '';
   };
   #Declarative bash configuration

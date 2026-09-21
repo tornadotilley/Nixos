@@ -58,21 +58,9 @@
   };
 
   # Enable the GNOME Desktop Environment.
-  #services.displayManager.gdm.enable = true;
-  #services.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
 
-  # Enable Noctalia Greeter
-  services.displayManager.noctalia-greeter = {
-    enabe = true;
-    settings = {
-      cursor.size = 24;
-      keyboard.layout = "us";
-    };
-    cursorTheme = {
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Ice";
-    };
-  };
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";

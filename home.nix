@@ -7,7 +7,10 @@
 
   home.packages = with pkgs; [
     eza
+    ttyper
     discord
+    foliate
+    obsidian
   ];
   programs.vim = {
     enable = true;

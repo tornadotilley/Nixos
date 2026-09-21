@@ -29,6 +29,7 @@
   # You can use https://search.nixos.org/ to find more packages (and options).
    environment.systemPackages = with pkgs; [
      vim
+     pkgs.noctalia-greeter
      pkgs.qbittorrent
      pkgs.vlc
      pkgs.proton-vpn

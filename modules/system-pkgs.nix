@@ -29,10 +29,11 @@
   # You can use https://search.nixos.org/ to find more packages (and options).
    environment.systemPackages = with pkgs; [
      vim
-     pkgs.qbittorrent
-     pkgs.vlc
-     pkgs.proton-vpn
-     fastfetch
+     libreoffice
+     onlyoffice-desktopeditors
+     qbittorrent
+     vlc
+     proton-vpn
      btop
      git
      wget

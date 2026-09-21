@@ -6,6 +6,8 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
+    fastfetch
+    pfetch
     eza
     obsidian
     foliate
@@ -75,7 +77,7 @@
 
     # Commands to execute at the end of interactive shell startup
     initContent = ''
-      fastfetch
+      pfetch
     '';
   };
   #Declarative bash configuration

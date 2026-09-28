@@ -6,9 +6,12 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
+    mcomix
+    libation
     fastfetch
     pfetch
     eza
+    ripgrep
     ttyper
     obsidian
     foliate

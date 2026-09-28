@@ -57,6 +57,9 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  # Enable tailscale
+  services.tailscale.enable = true;
+
   # Enable the GNOME Desktop Environment.
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;

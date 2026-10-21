@@ -64,6 +64,9 @@
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
 
+  # Enable the Cosmic Desktop Environment
+  #services.desktopManager.cosmic.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";

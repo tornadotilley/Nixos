@@ -57,6 +57,8 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  # Enable Flatpaks
+  services.flatpak.enable = true;
   # Enable tailscale
   services.tailscale.enable = true;
 

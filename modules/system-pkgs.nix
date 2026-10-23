@@ -45,9 +45,18 @@
      alacritty
      kitty
      tmux
+     kora-icon-theme
+     adwaita-icon-theme
+     hicolor-icon-theme
+     gruvbox-plus-icons
      inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
-   ];
+   ] ;
    fonts.packages = with pkgs; [
+     nerd-fonts.caskaydia-cove
+     nerd-fonts.fira-code
+     nerd-fonts.symbols-only
+     font-awesome
+     cantarell-fonts  
      noto-fonts
      noto-fonts-cjk-sans
      noto-fonts-color-emoji

@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     zapzap
+    zed-editor
     mcomix
     libation
     fastfetch
